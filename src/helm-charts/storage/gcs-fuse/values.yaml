@@ -17,9 +17,9 @@
 
 
 gcsVolumes:
-  - name: gcs-data
+  - name: princer-gcs-data
     type: data
     bucketName:
-  - name: gcs-checkpoints
+  - name: princer-gcs-checkpoints
     type: checkpoints
     bucketName:

@@ -36,6 +36,8 @@ spec:
     - file-cache:max-size-mb:-1
     - file-cache:enable-parallel-downloads:true
     - write:enable-streaming-writes:true
+    - logging:severity:trace
+    - read:inactive-stream-timeout:10s
   {{- if $gcs.dirPath }}
   - only-dir:{{ $gcs.dirPath }}
   {{- end }}
