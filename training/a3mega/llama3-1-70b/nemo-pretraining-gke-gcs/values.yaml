@@ -41,7 +41,7 @@ workload:
   gcsSidecarImage: gcr.io/gcs-tess/princer/gcs-fuse-csi-driver-sidecar-mounter:v1.13.3-latest
   # gcsSidecarImage: gcr.io/gke-release/gcs-fuse-csi-driver-sidecar-mounter@sha256:698fb0a9fe7c19adff792256a478963d1596faf4f7ceb8d516a5c85787c66606
   torchDistributedTarget: "/opt/NeMo/examples/nlp/language_modeling/megatron_gpt_pretraining.py"
-  experimentName: "nemo-experiments-storage1"
+  experimentName: "nemo-experiments-storage"
   experimentRootDir: "/job-logs"
   checkpointsRootDir: "/checkpoints"
   tokenizerPath: "/artifacts/third-party/tokenizers/gpt2"

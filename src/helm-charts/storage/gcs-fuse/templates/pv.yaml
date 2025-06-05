@@ -35,7 +35,7 @@ spec:
     - file-system:kernel-list-cache-ttl-secs:-1
     - file-cache:max-size-mb:-1
     - file-cache:enable-parallel-downloads:true
-    - write:enable-streaming-writes:true
+    - write:enable-streaming-writes:false
     - logging:severity:trace
     - read:inactive-stream-timeout:10s
   {{- if $gcs.dirPath }}
@@ -56,7 +56,7 @@ spec:
     - file-cache:max-size-mb:-1
     - file-cache:enable-parallel-downloads:true
     - file-system:kernel-list-cache-ttl-secs:0
-    - write:enable-streaming-writes:true
+    - write:enable-streaming-writes:false
   {{- if $gcs.dirPath }}
   - only-dir:{{ $gcs.dirPath }}
   {{- end }}
